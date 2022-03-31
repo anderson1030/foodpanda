@@ -208,7 +208,7 @@ def order(id):
 
 
 
-@app.route('/api/order')
+@app.route('/api/order', methods=['GET'])
 def Api():
 	orderlist = []
 
