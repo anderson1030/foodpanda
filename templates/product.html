@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} {% block body %}
+<h1 class="page-title">Hot Menu</h1>
+
+<ul class="Product">
+  {% for products in product %}
+  <div class="card" style="width: 30.33%">
+    <img class="card-img-top" src="{{products.url_pic}}" />
+    <div class="card-body">
+      <h5 class="card-title">{{products.name}}</h5>
+      <h5>{{products.product_detail}}</h5>
+      <p class="card-text">${{products.price}}</p>
+      <a
+        href="/order/{{products.id}}/"
+        style="display: block; text-align: center"
+        ><button type="submit">Order</button></a
+      >
+    </div>
+  </div>
+  {% endfor %}
+</ul>
+
+{% endblock %}

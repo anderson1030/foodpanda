@@ -1,0 +1,21 @@
+{% extends 'layout.html' %} 
+{% block body %}
+    <h1>hello {{user.username}}</h1>
+    <p>here is your order</p>
+    {% for order in orders %}
+    
+        {% for product in products%}
+
+
+            {% if product.id == order.product_id and user.id == order.user_id %}
+            <h1>id :{{order.id}}</h1>
+            <h2>order Time :{{order.orderTime}}</h2>
+            <p>product name :{{product.name}}</p>
+            <p>price : {{product.price}}</p>
+
+            {%endif%}
+
+        {% endfor %}
+
+    {%endfor%}
+{% endblock %}

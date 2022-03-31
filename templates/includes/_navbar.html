@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+<div class="wrapper">
+ <a href="/">
+    <img id="logo" src= {{ url_for('static', filename='images/fp-logo.png') }} />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('about')}}">About Us</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link order-nav" style="color:#FFF !important" href="{{url_for('products')}}">Order Now</a>
+      </li>
+      
+
+      
+
+    </ul>
+
+    <ul class="navbar-nav right">
+
+        {% if session['current_user'] %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('myorder')}}">My order</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+        </li>
+
+         <li class="nav-item">
+           <a class="nav-link">{{ session['current_user']['username'] }}</a>
+        </li>
+
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('register')}}">Register</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('login')}}">Login</a>
+        </li>
+        {% endif %}
+    </ul>
+
+  </div>
+  </div>
+</nav>

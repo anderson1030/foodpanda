@@ -1,0 +1,19 @@
+{% extends 'layout.html' %} 
+{% block body %}
+<h1 class="page-title">Here your order</h1>
+
+<div class="order-detail flex">
+    <div class="order-id">Order Id#{{id}}</div>
+    <div class="order-date">Order Date:{{time}}</div>
+</div>
+
+<div class="order-address">
+    Delivery Address:{{address}}
+</div>
+
+<div class="order-list">
+    Order Detail: <br>
+    {{food}}
+</div>
+
+{% endblock %}

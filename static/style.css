@@ -1,0 +1,376 @@
+.product-container{
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.shop{
+	width: 30%;
+	margin: 1.5%;
+
+}
+
+@media only screen and (max-width: 600px){
+    .shop{
+        width: 100%;
+    }
+}
+
+.shop-image{
+	padding-bottom: 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.shop-description{
+	padding: 20px 10px;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.shop-description h5{
+	font-size: 2em;
+	color: #47525E;
+	text-decoration: none;
+}
+
+.shop-description p{
+	font-size: 1.3em;
+	color: #47525E;
+	text-decoration: none;
+	padding-top: 30px;
+}
+
+.shop-description h5:hover{
+	color: #47525E;
+	text-decoration: none;
+}
+
+.shop-description p:hover{
+	color: #47525E;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar-nav.right{
+    justify-content: right;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.collapse.navbar-collapse ul{
+    width: 50%;
+    flex-basis:unset;
+    flex-grow:unset;
+    margin-left: 20px;
+}
+
+.collapse.navbar-collapse ul li a{
+    color: #000!important;
+    font-weight: 400;
+}
+
+.navbar-nav.right li a{
+    font-weight: 400!important;
+}
+
+.collapse.navbar-collapse ul li:hover a{
+    color: rgb(109, 31, 31)!important;
+}
+
+.navbar {
+    box-shadow: 0 5px 5px -1px rgb(0 0 0 / 20%);
+}
+
+.payment{
+    font-family: 'Noto Sans', sans-serif!important;
+}
+
+.section-title {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+.section-title:before, .section-title:after {
+    display: block;
+    flex: 1;
+    content: '';
+    border-bottom: 1px solid #979797;
+}
+
+.background {
+    background: url(../static/images/bg-nav.jpg);
+    min-height: 702px;
+}
+
+.bg-light {
+    background-color: #fff!important;
+}
+
+#logo{
+	width: 120px;
+}
+
+.order-button{
+    font-size: 1.5em;
+    padding: 15px 20px;
+    background-color: rgb(109, 31, 31);
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    width: max-content;
+   color: #FFF;
+  /* font-family: 'UnitedSans';*/
+   font-family: 'Noto Sans', sans-serif;
+    text-decoration: unset;
+
+}
+
+.menu-image img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.order-buttons{
+    text-decoration: unset;
+
+}
+
+.order-buttons:hover{
+    text-decoration: unset;
+}
+
+.order-nav{
+    padding: 5px 10px;
+    background-color: rgb(109, 31, 31);
+    border-radius: 5px;
+    text-align: center;
+    width: max-content;
+    color: #FFF!important;
+    border: 0;
+}
+
+.order-nav:hover, .order-button:hover{
+    background-color: #70a401;
+}
+
+footer{
+    display: flex;
+    padding: 30px 0;
+    background-color: #353535;
+    color: #FFF;
+
+}
+
+.footer-Left, .footer-right{
+width: 50%;
+}
+
+.footer-nav li{
+    list-style: none;
+}
+
+.footer-nav li a{
+    color: #FFF;
+    /*font-family: 'UnitedSans';*/
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.about{
+    padding: 50px 0;
+    font-size: 1.5em;
+}
+
+.navbar-nav li a{
+    /*font-family: 'UnitedSans';*/
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.Product{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.Product .card{
+    margin: 20px 1%;
+}
+
+.card-body button{
+    background: #47525E;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+
+.card-body form{
+    text-align: center;
+}
+
+.card-body h5{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.card-title{
+    font-size: 1.5rem!important;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.page-title{
+    /*font-family: 'UnitedSans';*/
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-title .content{
+    /*font-family: 'UnitedSans';*/
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.background-2{
+    background-image: url(/static/images/bg_start_page.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 14%;
+    width: 100%;
+    z-index: 1;
+}
+
+.container{
+    z-index: 2;
+}
+
+.order-table tr{
+    padding: 30px 0;
+}
+
+.order-table tr td, .order-table tr th{
+    padding: 15px;;
+    border:solid 1px #000;
+    font-weight: 600;
+}
+
+.container {
+    z-index: 2;
+    padding-bottom: 100px;
+}
+
+.order-table tr th{
+    background-color:rgb(13, 28, 44);
+    color:#FFF;
+}
+
+.order-table{
+    margin-top: 50px;
+    padding-bottom: 500px;
+}
+
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+
+.navbar-toggler{
+    height: fit-content!important;
+    position: absolute!important;
+    right: 10px!important;
+}
+
+.navbar-light.navbar-toggler{
+    height: fit-content!important;
+    position: absolute!important;
+    right: 10px!important;
+}
+@media(max-width:768px){
+    .container, .container-sm{
+        max-width: 100%!important;
+    }
+
+    .Product .card{
+        width: 48%!important;
+    }
+
+}
+
+@media(max-width:540px){
+
+    .Product .card{
+        width: 80%!important;
+        margin:0 auto!important;
+    }
+}
+
+footer .container{
+    display: flex;
+}
+
+.flex{
+	display: flex;
+}
+
+.order-id, .order-date{
+	width: 50%;
+	padding-top: 30px;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.order-id{
+	text-align: left;
+}
+
+.order-date{
+	text-align: right;
+
+}
+
+.order-address{
+	padding: 30px 0;
+	font-size: 1.3em;
+}
+
+.order-list{
+	padding: 30px 0;
+	font-size: 1.3em;
+	
+}

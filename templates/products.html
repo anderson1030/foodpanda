@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} 
+{% block body %}
+<div class="jumbotron text-center">
+    <h1>Product</h1>
+    <ul>
+        {% for product in products %}
+        <div class="row justify-content-center">
+            <div class="card" style="width: 30rem">
+                <img class="card-img-top" src="{{url_for('static',filename='images/'+product.url_pic)}}" alt="Card image cap" />
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <p class="card-text">price:{{product.price}}</p>
+                    <a href="product/{{product.id}}" class="btn btn-primary">Go to see more {{product.name}}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
+<li class="list-group-item"><a href="product/{{product.id}}">{{product.name}}</a></li>

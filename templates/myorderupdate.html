@@ -1,0 +1,31 @@
+<table class="order-table" style="width:100%" id="links">
+<tr>
+   
+    <th>Order ID</th>
+    <th>Order Time</th>
+    <th>Address</th>
+    <th>Food Name</th>
+    <th>Order Status</th>
+</tr>
+
+
+{% for order in orders %}
+    {% for food in foods %} 
+
+    {% if user.id == order.user_id and food.id == order.food_id %}
+
+    <tr>
+        <td>{{order.id}}</td>
+        <td>{{order.time}}</td>
+        <td>{{user.address}}</td>
+        <td>{{food.name}}</td>
+        <td>{{order.status}}</td>
+    </tr>
+
+    {%endif%}
+
+    {%endfor%}
+
+{%endfor%}
+
+</table>
